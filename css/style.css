@@ -123,6 +123,31 @@ html {
   transition: all 0.2s ease-in-out;
   border-bottom: 2px solid #c28285;
 }
+/* Tablet screens (≤ 1024px) */
+@media (max-width: 1024px) {
+  .hero {
+    background-attachment: scroll; /* Disable fixed for performance */
+    padding: 80px 30px;
+  }
+}
+
+/* Small tablets and phones (≤ 768px) */
+@media (max-width: 768px) {
+  .hero {
+    background-size: cover;
+    padding: 60px 20px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile phones (≤ 480px) */
+@media (max-width: 480px) {
+  .hero {
+    padding: 50px 15px;
+    font-size: 0.85rem;
+    background-position: center top; /* Adjust image focus */
+  }
+}
 
 .space40px {
   height: 40px;
@@ -738,4 +763,5 @@ body.preloader-site {
   font-family: "Raleway", sans-serif;
   color: #000;
 }
+
 
